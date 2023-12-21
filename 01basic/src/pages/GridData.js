@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { AgGridReact } from 'ag-grid-react'; 
 import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-quartz.css";
-import authfetch from "../axios/intercepForm";
+import authfetch from '../axios/interceptor';
 
 
 
@@ -20,16 +20,19 @@ export const GridData = () => {
       
     ]);
     
-    useEffect(() => {
+    useEffect(() => {     
 
-      authfetch.get("/accounts")
-      .then(y => {
+      authfetch.get("/accounts").then((y) => {
   
-        setData(y.data)
+       
+        setData(y.data);
+        console.log(y.data)
   
-      })
+      });
+    
   
-    },[])
+    }, []);
+  
 
     
   return (
@@ -44,3 +47,5 @@ export const GridData = () => {
   </div>
 )
 }
+
+  

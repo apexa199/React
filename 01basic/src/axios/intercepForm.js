@@ -31,8 +31,8 @@ authfetch.interceptors.request.use((request) => {
         if(response.config.url.includes("register"))
         {
             toast.success(' Registration Sucessful ', {
-                position: "top-right",
-                autoClose: 0,
+                position: "top-center",
+                autoClose: false,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,
@@ -46,8 +46,8 @@ authfetch.interceptors.request.use((request) => {
             {
                 toast.success(' Login Sucessful', 
                 {
-                    position: "top-right",
-                    autoClose: 0,
+                    position: "top-center",
+                    autoClose: false,
                     hideProgressBar: false,
                     closeOnClick: true,
                     pauseOnHover: true,
@@ -64,7 +64,7 @@ authfetch.interceptors.request.use((request) => {
 
     if (error?.response?.status == 400) 
     {
-        toast.error(`Error`, {
+        toast.error(`Error! Something Went Wrong`, {
             position: "top-center",
             autoClose: false,
             hideProgressBar: false,
