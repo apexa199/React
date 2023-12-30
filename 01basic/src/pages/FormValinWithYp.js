@@ -36,8 +36,6 @@ export default function CustomerData() {
 
       password: Yup.string()
         .required("Please Enter Your Password!")
-        .min(6, "Password must be at least 6 characters")
-        .max(40, "Password must not exceed 40 characters")
         .matches(/[0-9]/, "email requires a number")
         .matches(/[a-z]/, "email requires a lowercase letter")
         .matches(/[^\w]/, "email requires a symbol"),
