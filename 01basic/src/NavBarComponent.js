@@ -5,7 +5,7 @@ import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 
 const NavbarComponent = () => {
   return (
-    <Navbar bg="light" expand="lg" className="mb-3">
+    <Navbar bg="dark" expand="lg" className="mb-3">
       <Container>
         <Navbar.Brand href="#home">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
