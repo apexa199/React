@@ -6,7 +6,7 @@ import CustomerData from "./pages/FormValinWithYp";
 import { Dashboard } from "./pages/Dashboard";
 import { GridData } from "./pages/GridData";
 import { useState } from "react";
-import LangContext from "./pages/LangContext";
+
 
  
 export default function App() {
@@ -14,8 +14,8 @@ export default function App() {
   const[lan,setLan] = useState('en')
 
   return (
-    <LangContext.Provider value={{lan,setLan}} >
-
+  
+    <>
     <LogInNav/>
     
         <Routes>
@@ -27,7 +27,7 @@ export default function App() {
         </Routes>
 
 
-    </LangContext.Provider>
+    </>
   );
 }
 

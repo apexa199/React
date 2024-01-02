@@ -3,29 +3,12 @@ import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { Row, Col, Button } from "react-bootstrap";
 import authfetch from "../axios/intercepForm";
-import LangContext from "../pages/LangContext";
+
 
 export default function CustomerData() {
-
-  const{lan} = useContext(LangContext);
-
-  const langObject = {
-
-    'en':{
-
-      "firstName" : "FirstName",
-      "lastName" : "LastName"
-    },
-
-    'hi':{
-
-      "firstName":"guddi name",
-      "lastName":"hello name"
-    }
-
-  }
-
-  const d = {
+ 
+  
+ const d = {
 
     title: "",
     firstName: "",
@@ -119,7 +102,7 @@ export default function CustomerData() {
                 </div>
 
                 <div className="form-group m-3 ">
-                  <label>{langObject[lan].firstName}</label>
+                  <label>First Name</label>
                   <Field
                     name="firstName"
                     type="text"
@@ -134,7 +117,7 @@ export default function CustomerData() {
                 </div>
 
                 <div className="form-group m-3">
-                  <label>{langObject[lan].lastName}</label>
+                  <label>Last Name</label>
                   <Field
                     name="lastName"
                     type="text"

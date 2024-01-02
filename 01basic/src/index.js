@@ -42,7 +42,7 @@ theme="light"
 />
 
 
-< App/>
+< DataMangment/>
 </BrowserRouter>
 
 );
