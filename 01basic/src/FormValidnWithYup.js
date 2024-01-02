@@ -2,7 +2,9 @@ import React from 'react';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
-export const FormValidnWithYup = () => {    const d = {
+export const FormValidnWithYup = () => {   
+  
+  const d = {
     fullname: '',
     username: '',
     email: '',

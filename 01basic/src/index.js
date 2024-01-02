@@ -20,6 +20,9 @@ import { LogInNav } from './pages/LogInNav';
 import { ToastContainer } from 'react-toastify';
 import App from './App';
 import { FormValidnWithYup } from './FormValidnWithYup';
+import { Display1 } from './Display1';
+import LangContext from './pages/LangContext';
+
 
 
 

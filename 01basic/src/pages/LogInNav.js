@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Navbar, Nav, Container} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import LangContext from '../pages/LangContext';
 
 
 
 
 export const LogInNav = () => {
 
+  const{lan,setLan} = useContext(LangContext)
+
+  const handleLan = (e)=>{
+
+    setLan(e.target.value);
+  }
   return (
     <>
       <div>
@@ -22,6 +29,16 @@ export const LogInNav = () => {
                 <Nav.Link as={Link} to='/'>SIGN UP</Nav.Link>
                 <Nav.Link as={Link} to='/dashboard'>DASHBORAD</Nav.Link>
                 <Nav.Link as={Link} to='/gridData'>GRIDDATA</Nav.Link>
+                <Nav.Link >
+          
+          <select onChange={handleLan}>
+
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+            <option value="gj">Gujrati</option>
+          </select>
+          
+        </Nav.Link>
               </Nav>
           </Container>
         </Navbar>     
