@@ -134,7 +134,7 @@ export default function CustomerData() {
                 </div>
 
                 <div className="form-group m-3">
-                  <label>{langObject[lan].las}</label>
+                  <label>{langObject[lan].lastName}</label>
                   <Field
                     name="lastName"
                     type="text"

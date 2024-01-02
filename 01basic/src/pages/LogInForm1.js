@@ -52,10 +52,11 @@ export const LogInForm1 = () => {
               }}
               validationSchema={validation}
               onSubmit={(values) => {
+
                 authfetch
                   .post("accounts/authenticate", values)
                   .then((y) => {
-                    localStorage.setItem("token", JSON.stringify(y.data));
+                          localStorage.setItem("userInfo",JSON.stringify(y.data));
                     navi("/dashboard");
                     console.log(y.data);
                   })

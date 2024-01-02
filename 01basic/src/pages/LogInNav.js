@@ -8,14 +8,14 @@ import LangContext from '../pages/LangContext';
 
 export const LogInNav = () => {
 
-  const{lan,setLan} = useContext(LangContext)
+  const{setLan} = useContext(LangContext)
 
   const handleLan = (e)=>{
 
     setLan(e.target.value);
   }
 
-  
+
   return (
     <>
       <div>

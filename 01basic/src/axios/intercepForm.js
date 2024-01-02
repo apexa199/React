@@ -11,7 +11,7 @@ const authfetch = axios.create({
 
 authfetch.interceptors.request.use((request) => {
 
-    request.headers["Authorization"] = "bearer " + d.jwtToken;
+    request.headers["Authorization"] = "bearer " + JSON.parse(localStorage.getItem("userInfo"))?.jwtToken;
 
     request.headers["Content-Type"] = "application/json";
 
