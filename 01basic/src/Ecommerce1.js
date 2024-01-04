@@ -20,7 +20,7 @@ export const Ecommerce = () => {
     .then(y=>{
 
         setData(y.data);
-        
+   
     }).catch(y=>{
         console.log(y);
     })
