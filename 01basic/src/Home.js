@@ -40,7 +40,8 @@ export const Counter = () => {
           })
         }
         </tbody>
-      </table>  </>
+      </table>  
+      </>
     )
   }
   

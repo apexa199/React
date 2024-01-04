@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { ListAccount } from './ListAccount';
-import axios from 'axios';
 import authfetch1 from './axios/interceptor';
 
 

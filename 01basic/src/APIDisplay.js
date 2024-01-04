@@ -9,7 +9,9 @@ export const APIDisplay = () => {
         fetch("https://jsonplaceholder.typicode.com/posts")
         .then(y => y.json())
         .then(y => 
+            
             setData(y))
+       
     },[])
 
   return (
