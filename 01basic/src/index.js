@@ -41,7 +41,7 @@ theme="light"
 />
 
 
-< APIDisplay/>
+< DataMangment/>
 </BrowserRouter>
 
 );
