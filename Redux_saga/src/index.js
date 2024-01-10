@@ -12,6 +12,7 @@ import Counter2 from './components/Counter2';
 import Counter3 from './components/Counter3';
 import Display from './components/Display';
 import { Button1 } from './components/Button1';
+import { TutorailDisplay } from './components/TutorailDisplay';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,9 +21,9 @@ root.render(
 
     <Provider store={store}>
 
-    <Display />
-
-  <Button1>this is my children props</Button1>
+    <TutorailDisplay />
+{/* 
+  <Button1>this is my children props</Button1> */}
 
     </Provider>
 
