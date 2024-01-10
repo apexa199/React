@@ -7,6 +7,12 @@ import { Provider } from 'react-redux';
 import store from './store/store';
 import Counter from './components/Counter';
 import UserData from './components/UserData';
+import Counter1 from './components/Counter1';
+import Counter2 from './components/Counter2';
+import Counter3 from './components/Counter3';
+import Display from './components/Display';
+import { Button1 } from './components/Button1';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +20,9 @@ root.render(
 
     <Provider store={store}>
 
-    <UserData />
+    <Display />
+
+  <Button1>this is my children props</Button1>
 
     </Provider>
 

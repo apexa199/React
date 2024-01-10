@@ -31,10 +31,10 @@ export default function Counter() {
     <div>
         {d}
     
-        <button onClick={inc}>+</button>
-        <button onClick={dec}>-</button>
-        <button onClick={mul}>*</button>
-        <button onClick={div}>/</button>
+        <button onClick={inc}>Increment</button>
+        <button onClick={dec}>Decrement</button>
+        <button onClick={mul}>Multiplication</button>
+        <button onClick={div}>Divide</button>
     
     </div>
   )
