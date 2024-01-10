@@ -21,7 +21,7 @@ root.render(
 
     <Provider store={store}>
 
-    <TutorailDisplay />
+    <UserData />
 {/* 
   <Button1>this is my children props</Button1> */}
 

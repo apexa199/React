@@ -17,6 +17,16 @@ export default function UserData() {
     console.log(data);
 
   return (
-    <div>UserData</div>
+   <>
+    <table>
+      <tbody>
+        {
+          data.map((v) => 
+          <tr><td>{v.id}</td>
+          <td>{v.name}</td></tr>)
+        }
+      </tbody>
+    </table>
+    </>
   )
 }

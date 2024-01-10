@@ -3,14 +3,14 @@ import { useDispatch, useSelector } from 'react-redux'
 
 export const TutorailDisplay = () => {
 
-    const data = useSelector(y => y. tutorial)
+    const data = useSelector(y => y.tutorial)
 
     const dis = useDispatch();
 
     useEffect(() => {
 
         dis({type : 'GET_TUTORIAL_REQUESTED'})
-        
+
     },[])
 
     console.log(data)
