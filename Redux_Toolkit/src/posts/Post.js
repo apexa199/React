@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { getPosts } from './postsSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
+
 export default function Post() {
 
     const { list, status } = useSelector((state) => state.post);
@@ -19,6 +20,7 @@ export default function Post() {
   
     return (
       <div>Id</div>
+
     // <table>
     //   <tbody>
         
