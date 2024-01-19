@@ -13,6 +13,7 @@ import Counter3 from './components/Counter3';
 import Display from './components/Display';
 import { Button1 } from './components/Button1';
 import { TutorailDisplay } from './components/TutorailDisplay';
+import { ListTutorial } from './components/ListTutorial';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,7 +22,7 @@ root.render(
 
     <Provider store={store}>
 
-    <UserData />
+    <ListTutorial />
 {/* 
   <Button1>this is my children props</Button1> */}
 

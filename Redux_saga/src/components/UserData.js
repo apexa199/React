@@ -21,9 +21,10 @@ export default function UserData() {
     <table>
       <tbody>
         {
-          data.map((v) => 
+        data.data.map((v) => 
           <tr><td>{v.id}</td>
-          <td>{v.name}</td></tr>)
+          <td>{v.name}</td>
+          </tr>)
         }
       </tbody>
     </table>
