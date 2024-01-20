@@ -16,7 +16,7 @@ root.render(
 
     <Provider store={store}>
 
-    <VideoPlayer/>
+    <UserInfo/>
 
     </Provider>
   </React.StrictMode>
