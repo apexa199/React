@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
-import { getUserAction } from './userSlice';
+import userSlice, { getUserAction } from './userSlice';
 import { useDispatch, useSelector } from 'react-redux';
+import {user} from '../user/userSlice'
 
 export default function UserInfo() {
 
@@ -17,6 +18,17 @@ export default function UserInfo() {
 
 
   return (
-    <div>UserInfo</div>
+    <div>UserInfo
+      {/* <table>
+        <tbody>
+          {
+            data.map((v)=> {
+              <tr><td>{v.id}</td>
+              <td>{v.name}</td></tr>
+            })
+          }
+        </tbody>
+      </table> */}
+    </div>
   )
 }

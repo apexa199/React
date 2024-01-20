@@ -24,6 +24,7 @@ const postsSlice = createSlice({
   name: 'posts',
   initialState,
   reducers: {},
+  
   extraReducers: (builder) => {
     builder.addCase(getPosts.fulfilled, (state, { payload }) => {
         state.list = payload;
