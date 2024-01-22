@@ -16,7 +16,7 @@ root.render(
 
     <Provider store={store}>
 
-    <UserInfo/>
+    <Post/>
 
     </Provider>
   </React.StrictMode>

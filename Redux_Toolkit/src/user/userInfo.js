@@ -22,9 +22,10 @@ export default function UserInfo() {
       <table>
         <tbody>
           {
-            data.data.map((v)=> {
-              <tr><td>{v.id}</td>
-              <td>{v.name}</td></tr>
+            data?.user?.data?.map((v)=> {
+             
+             return (<tr><td>{v.id}</td>
+              <td>{v.name}</td></tr>)
             })
           }
         </tbody>
