@@ -14,19 +14,25 @@ import Display from './components/Display';
 import { Button1 } from './components/Button1';
 import { TutorailDisplay } from './components/TutorailDisplay';
 import { ListTutorial } from './components/ListTutorial';
+import ErrorHandling from './ErrorHandling';
+import BuggyCounterError from './BuggyCounterError';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
+<ErrorHandling>
+
     <Provider store={store}>
 
-    <ListTutorial />
-{/* 
-  <Button1>this is my children props</Button1> */}
+    <BuggyCounterError />
+{/*<Button1>this is my children props</Button1> */}
+
 
     </Provider>
+
+    </ErrorHandling>
 
   </React.StrictMode>
 );
