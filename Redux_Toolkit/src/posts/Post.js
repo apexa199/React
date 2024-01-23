@@ -19,19 +19,6 @@ export default function Post() {
       console.log(list);
   
     return (
-      <div>Id</div>
-
-    // <table>
-    //   <tbody>
-        
-    //     {
-    //     list.map((v) => {
-    //         <tr><td>{v.userId}</td>
-    //         <td>{v.id}</td>
-    //         <td>{v.title}</td></tr>
-    //       })
-    //     }
-    //   </tbody>
-    // </table>
+      <div>postid</div>
   )
 }
