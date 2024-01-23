@@ -1,41 +1,43 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { Provider } from 'react-redux';
-import store from './store/store';
-import Counter from './components/Counter';
-import UserData from './components/UserData';
-import Counter1 from './components/Counter1';
-import Counter2 from './components/Counter2';
-import Counter3 from './components/Counter3';
-import Display from './components/Display';
-import { Button1 } from './components/Button1';
-import { TutorailDisplay } from './components/TutorailDisplay';
-import { ListTutorial } from './components/ListTutorial';
-import ErrorHandling from './ErrorHandling';
-import BuggyCounterError from './BuggyCounterError';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { Provider } from "react-redux";
+import store from "./store/store";
+import Counter from "./components/Counter";
+import UserData from "./components/UserData";
+import Counter1 from "./components/Counter1";
+import Counter2 from "./components/Counter2";
+import Counter3 from "./components/Counter3";
+import Display from "./components/Display";
+import { Button1 } from "./components/Button1";
+import { TutorailDisplay } from "./components/TutorailDisplay";
+import { ListTutorial } from "./components/ListTutorial";
+import { ErrorBoundary } from "react-error-boundary";
+import BuggyCounterError from "./BuggyCounterError";
+import ErrorHandling from "./ErrorHandling";
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
 
-<ErrorHandling>
+    <ErrorBoundary fallback={<div>Something went wrong!!!!!</div>}>
+
+{/* <ErrorHandling> */}
 
     <Provider store={store}>
+          
+      <BuggyCounterError />
 
-    <BuggyCounterError />
-{/*<Button1>this is my children props</Button1> */}
-
+        {/*<Button1>this is my children props</Button1> */}
 
     </Provider>
 
-    </ErrorHandling>
+{/* </ErrorHandling> */}
 
+    </ErrorBoundary>
   </React.StrictMode>
 );
-
 
 reportWebVitals();
