@@ -9,10 +9,10 @@ export default (state = 0, { type, payload }) => {
         return state-1;
 
     case 'MUL':
-        return state*1;
+        return state*2;
 
     case 'DIV':
-        return state/1;
+        return state/2;
 
     default:
       return state

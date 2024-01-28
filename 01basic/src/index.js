@@ -41,7 +41,7 @@ theme="light"
 />
 
 
-< DataMangment/>
+< Ecommerce/>
 </BrowserRouter>
 
 );

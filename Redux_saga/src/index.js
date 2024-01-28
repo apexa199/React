@@ -53,7 +53,7 @@ root.render(
 
     <Provider store={store}>
           
-      <BuggyCounterError />
+      <Counter />
 
         {/*<Button1>this is my children props</Button1> */}
 
